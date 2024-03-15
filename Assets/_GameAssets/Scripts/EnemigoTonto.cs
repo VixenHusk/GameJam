@@ -17,9 +17,7 @@ public class EnemigoTonto : MonoBehaviour
     }
     void OnCollisionEnter(Collision c)
     {
-        if (c.gameObject.name != suelo.name)
-        {
+
             transform.Rotate(0, Random.Range(minAngle, maxAngle), 0);
-        }
     }
 }
