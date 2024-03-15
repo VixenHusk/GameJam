@@ -28,7 +28,7 @@ public class Armas : MonoBehaviour
         municion--;
         GameObject bala = Instantiate(prefabBala,transformSpawner.position, transformSpawner.rotation);
         bala.GetComponent<Rigidbody>().AddForce(bala.transform.forward * fuerza);
-        GetComponent<AudioSource>().PlayOneShot(audioShoot);
+        //GetComponent<AudioSource>().PlayOneShot(audioShoot);
     }
 
     public void Reload(){
