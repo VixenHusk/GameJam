@@ -12,15 +12,12 @@ EditorBuildSettings:
     path: Assets/_GameAssets/Scenes/Instrucciones.unity
     guid: 780fc70acca70cc43b71ee676c36dd2c
   - enabled: 1
-    path: Assets/_GameAssets/Scenes/Buildingcollinder.unity
-    guid: 6cf7aa80065e78740851cd9d574b4e08
-  - enabled: 1
-    path: Assets/_GameAssets/Scenes/gameover.unity
-    guid: 0f2d2b642f5187a459a6f691f6397fe0
-<<<<<<< Updated upstream
-=======
+    path: Assets/_GameAssets/Scenes/Main.unity
+    guid: 1726206bb40b77f42862c94b865ad7ca
   - enabled: 1
     path: Assets/_GameAssets/Scenes/WinScene.unity
     guid: 567bd8b70d4978d4bbd2a95e756925b1
->>>>>>> Stashed changes
+  - enabled: 1
+    path: Assets/_GameAssets/Scenes/gameover.unity
+    guid: 0f2d2b642f5187a459a6f691f6397fe0
   m_configObjects: {}

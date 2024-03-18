@@ -4,8 +4,8 @@ using UnityEngine;
 public class PowerSpeedController : MonoBehaviour
 {
     // Velocidad normal y velocidad aumentada
-    public float boostedWalk = 6f;
-    public float boostedRun = 12f;
+    public float boostedWalk = 3f;
+    public float boostedRun = 6f;
     public float boostDuration = 5f; // Duración del aumento de velocidad en segundos
     private MeshRenderer meshRenderer;
     private FPSController playerController;
@@ -46,8 +46,8 @@ public class PowerSpeedController : MonoBehaviour
         Debug.Log(" esperando a eliminar ");
 
         // Restaura la velocidad normal
-        playerController.walkSpeed = 3f;
-        playerController.runSpeed = 6f;
+        playerController.walkSpeed = 2f;
+        playerController.runSpeed = 4f;
         Debug.Log(" restaurando ");
         // Desactiva el aumento de velocidad
         isBoosted = false;
