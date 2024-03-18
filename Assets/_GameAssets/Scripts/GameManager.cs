@@ -1,5 +1,8 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (puntuacionActual >= puntosObjetivo)
         {
             // Si se alcanzaron los puntos requeridos, el juego termina con victoria
-            TerminarJuego("Has ganado");
+            GanarJuego("Has ganado");
         }
     }
 
@@ -42,10 +45,23 @@ public class GameManager : MonoBehaviour
         return puntuacion;
     }
 
-    void TerminarJuego(string mensaje)
-    {
+    void GanarJuego(string mensaje){
         gameOver = true;
+        SceneManager.LoadScene(3);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         // Aquí puedes desencadenar cualquier acción que desees cuando el juego termine.
         Debug.Log("Game Over - " + mensaje);
     }
+
+    void TerminarJuego(string mensaje)
+    {
+        gameOver = true;
+        SceneManager.LoadScene(2);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        // Aquí puedes desencadenar cualquier acción que desees cuando el juego termine.
+        Debug.Log("Game Over - " + mensaje);
+    }
+
 }

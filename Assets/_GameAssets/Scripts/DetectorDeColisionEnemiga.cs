@@ -21,10 +21,10 @@ public class DetectorDeColisionEnemiga : MonoBehaviour
             puntuacion = Int32.Parse(textObject.text) + PuntosPorDisparo;
             textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(puntuacion.ToString());
             Destroy(this.gameObject);
-        } else
+        } /*else
         {
             Destroy(this.gameObject);
-        }
+        }*/
 
     }
 
