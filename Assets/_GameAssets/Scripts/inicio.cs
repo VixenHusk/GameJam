@@ -12,6 +12,9 @@ public class inicio : MonoBehaviour
     public void PlayJuego(){
       SceneManager.LoadScene(2);
     }
+    public void InstJuego(){
+      SceneManager.LoadScene(1);
+    }
     public void SalirJuego(){
       Application.Quit();
     }
