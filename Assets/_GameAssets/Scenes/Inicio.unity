@@ -689,8 +689,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: 0}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchoredPosition: {x: -44, y: 187}
+  m_SizeDelta: {x: 46.129, y: 44.809}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &460478908
 MonoBehaviour:
@@ -1229,9 +1229,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 942172092}
-        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
-        m_MethodName: IniciarJuego
+      - m_Target: {fileID: 942172095}
+        m_TargetAssemblyTypeName: inicio, Assembly-CSharp
+        m_MethodName: PlayJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1366,9 +1366,9 @@ GameObject:
   - component: {fileID: 942172090}
   - component: {fileID: 942172089}
   - component: {fileID: 942172088}
-  - component: {fileID: 942172092}
   - component: {fileID: 942172093}
   - component: {fileID: 942172094}
+  - component: {fileID: 942172095}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1461,18 +1461,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &942172092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942172087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0879e4fe69a905041998240acdb03491, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &942172093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,6 +1484,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b145f5b7b32f27b43b8d83f0e37cfbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &942172095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942172087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0879e4fe69a905041998240acdb03491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1518712947
@@ -1580,7 +1580,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1518712950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 942172095}
+        m_TargetAssemblyTypeName: inicio, Assembly-CSharp
+        m_MethodName: InstJuego
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1518712950
 MonoBehaviour:
   m_ObjectHideFlags: 0
