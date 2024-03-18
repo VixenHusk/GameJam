@@ -447,7 +447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'shift: Correr
+  m_text: 'Shift: Correr
 
 '
   m_isRightToLeft: 0
