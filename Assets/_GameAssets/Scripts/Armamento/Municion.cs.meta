@@ -3,7 +3,9 @@ guid: 1b3d133739417034996d2b422113ee69
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - arma: {instanceID: 0}
+  - audioReload: {fileID: 8300000, guid: 23d06a597ba2a214ba5d0404cd184fff, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

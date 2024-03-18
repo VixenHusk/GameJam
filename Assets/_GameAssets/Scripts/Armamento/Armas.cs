@@ -12,6 +12,8 @@ public class Armas : MonoBehaviour
     public Transform transformSpawner;
     public AudioClip audioShoot; // sonido balas
     public AudioClip audioNoBullets; // sonido sin balas
+    public AudioClip audioReload; // sonido recarga
+    private bool isReloadingSoundPlaying = false;
 
     public void Start(){
         municion = capacidad;
@@ -28,11 +30,20 @@ public class Armas : MonoBehaviour
         municion--;
         GameObject bala = Instantiate(prefabBala,transformSpawner.position, transformSpawner.rotation);
         bala.GetComponent<Rigidbody>().AddForce(bala.transform.forward * fuerza);
-        //GetComponent<AudioSource>().PlayOneShot(audioShoot);
+        GetComponent<AudioSource>().PlayOneShot(audioShoot);
     }
 
+    private void StartReloadingSoundCooldown() {
+    isReloadingSoundPlaying = false;
+    }
+    
     public void Reload(){
-        municion = capacidad;
+    if (!isReloadingSoundPlaying) {
+        GetComponent<AudioSource>().PlayOneShot(audioReload);
+        isReloadingSoundPlaying = true;
+         Invoke("StartReloadingSoundCooldown", audioReload.length); // Reinicia el booleano después de que termine el sonido de recarga
+    }
+    municion = capacidad;
     }
 
 }
