@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     void TerminarJuego(string mensaje)
     {
         gameOver = true;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         // Aquí puedes desencadenar cualquier acción que desees cuando el juego termine.

@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/_GameAssets/BalaPaquete.unitypackage.meta
+Assets/_GameAssets/paquetearma.unitypackage.meta
+Assets/_GameAssets/prefabmaxammo.unitypackage.meta
+Assets/Enemies Gamejam.unitypackage.meta
